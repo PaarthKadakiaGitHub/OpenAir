@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/OpenAir/static/css/main.687ba036.css",
+    "main.js": "/OpenAir/static/js/main.84e95974.js",
+    "static/js/787.7a7552fc.chunk.js": "/OpenAir/static/js/787.7a7552fc.chunk.js",
+    "static/media/The-Monocot-Studio-Evelyn-Residences-9.jpg": "/OpenAir/static/media/The-Monocot-Studio-Evelyn-Residences-9.cb00c72a34f46c25557a.jpg",
+    "static/media/plain-black-background-02fh7564l8qq4m6d.jpg": "/OpenAir/static/media/plain-black-background-02fh7564l8qq4m6d.0db02cb552e061a559cc.jpg",
+    "static/media/quote3.jpg": "/OpenAir/static/media/quote3.93489d57d202031d74fd.jpg",
+    "static/media/quote2.jpg": "/OpenAir/static/media/quote2.8d10169a13da4dacb0c9.jpg",
+    "static/media/quote4.jpg": "/OpenAir/static/media/quote4.21923ace85939fc1afaa.jpg",
+    "static/media/layered-waves-haikei (3).svg": "/OpenAir/static/media/layered-waves-haikei (3).5781ff03e574d227e50d.svg",
+    "index.html": "/OpenAir/index.html",
+    "main.687ba036.css.map": "/OpenAir/static/css/main.687ba036.css.map",
+    "main.84e95974.js.map": "/OpenAir/static/js/main.84e95974.js.map",
+    "787.7a7552fc.chunk.js.map": "/OpenAir/static/js/787.7a7552fc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.687ba036.css",
+    "static/js/main.84e95974.js"
+  ]
+}
