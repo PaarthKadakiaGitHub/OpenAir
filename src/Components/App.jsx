@@ -10,10 +10,12 @@ import img4 from './quote3.jpg'
 import img5 from './quote4.jpg'
 import emailjs from '@emailjs/browser'
 
+
 // 
 // 
 // 
 function App() {
+
   const formRef = useRef();
   const [form, setForm] = useState({
     name: "",
@@ -73,6 +75,7 @@ function App() {
   return (
    
     <body className='navbar'>
+      
       <div class="custom-shape-divider-top-1705389671">
     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
         <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
@@ -90,7 +93,6 @@ function App() {
     </header>
     
     <div className="estimate">
-    <motion.div transition={{type: "tween", duration: 1.5}} animate= {{ scale: 1}} initial={{scale:0}}>
     <section className='container'>
       <form action="#" className="form"
       ref={formRef}
@@ -119,10 +121,17 @@ function App() {
         </form>
     
     </section>
-    </motion.div>
     <div>
+    
       <div className='estimate'>
-      <a><img className="asdf" src={img} alt="Italian Trulli" /></a>
+      
+      <a>
+      <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+        <img className="asdf" src={img} alt="Italian Trulli" />
+        </motion.div>
+
+        </a>
+
     </div> 
     </div>
 
@@ -130,14 +139,26 @@ function App() {
     <div className="estimate4">
 
     <div>
-      <a><img className="asdf2" src={img} alt="Italian Trulli" /></a>
+      <a>
+      <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+        <img className="asdf2" src={img} alt="Italian Trulli" />
+        </motion.div>
+      </a>
+    
     </div> 
+    
     </div>
     
 
     <div className="spacer layer1"></div>
 
     <div className='estimate2'>
+    <motion.div
+  initial={{ opacity: 0 }}
+  whileInView={{ opacity: 1 }}
+  transition={{ duration: 1 }}
+
+>
       <section className='container3'>
     <header className='header2'>Local Mississauga Cleaning Services</header>
     <p>
@@ -151,7 +172,14 @@ function App() {
   </p>
 
     </section>
+    </motion.div>
+    <motion.div
+  initial={{ opacity: 0 }}
+  whileInView={{ opacity: 1 }}
+  transition={{ duration: 1 }}>
     <div className="estimate2">
+    
+  
     <section className="container2">     
     <header className='header2'>hours of operation</header>
     <p>Sunday 12pm-12am</p>
@@ -163,11 +191,15 @@ function App() {
     <p>Saturday 12pm-12am</p>
 
   </section>
+
   </div>
-  
+  </motion.div>
+
   
     </div>
+
     <div className="estimate5">
+
     <section className="container2">     
     <header className='header2'>hours of operation</header>
     <p>Sunday 12pm-12am</p>
@@ -179,7 +211,9 @@ function App() {
     <p>Saturday 12pm-12am</p>
 
   </section>
+
   </div>
+
     <div className="estimate2">
 
     <div class="slider-frame">
