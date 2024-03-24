@@ -41,13 +41,13 @@ function App() {
 
     emailjs
       .send(
-        'service_a17ht0q',
+        'service_eo1d3eg',
         'template_6p32wdr',
         {
           from_name: form.name,
-          to_name: "Paarth Kadakia",
+          to_name: "OpenAirServices",
           from_email: form.email,
-          to_email: "paarth.kadakia24@gmail.com",
+          to_email: "qsftyhko@gmail.com",
           message: form.message,
         },
         'DDSC7nnv8ziFOP5C9'
@@ -101,24 +101,43 @@ function App() {
 
         <div className="input-box">
           <label>Name</label>
-        <input placeholder='Name'></input>
+        <input 
+        name = 'name'
+        value={form.name}
+        onChange={handleChange}
+         placeholder='Name'></input>
         </div>
         <div className="input-box">
         <label>Email</label>
 
-        <input placeholder='Email'></input>
+        <input
+        name='email'
+
+         value={form.email}
+         onChange={handleChange}
+          placeholder='Email'></input>
         </div>
-        <div className="input-box">
+        {/* <div className="input-box">
         <label>Location</label>
 
         <input placeholder='Location'></input>
-        </div>
+        </div> */}
         <div className="input-box">
         <label>Message</label>
 
-        <textarea className='message' placeholder='Message'></textarea>
+        <textarea 
+        name='message'
+        value={form.message}
+        onChange={handleChange}
+        className='message' placeholder='Message'></textarea>
         </div>
-        </form>
+        <button
+            type='submit'
+            className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
+          >
+            {loading ? "Sending..." : "Send"}
+          </button>
+          </form>
     
     </section>
     <div>
